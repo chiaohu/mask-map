@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mask map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="sidebar">
+            <div class="header">
+                <div class="day">
+                    <div class="week">
+                        <h2>星期<span></span></h2>
+                    </div>
+                    <div class="date">
+                        <p class="today"></p>
+                        <p class="odd">身分證尾數為1、3、5、7、9可以購買</p>
+                        <p class="even">身分證尾數為2、4、6、8、0可以購買</p>
+                        <p class="all">星期天都可以購買</p>
+                    </div>
+                </div>
+                <select class="county" name="county"></select>
+                <select class="countyTown" name="countyTown"></select>
+                <div class="searchArea">
+                    <input class="search fas fa-search" type="text" placeholder="搜尋區域,地址,藥局">
+                    <a href="#" class="searchBtn fas fa-search"></a>
+                </div>
+            </div>          
+            <div class="info">
+                <ul class="list">
+                </ul>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
+
