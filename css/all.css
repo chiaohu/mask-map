@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/*css reset end */
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+.sidebar{
+    width: 25%;
+}
+.header{
+    background-color:#73C0D8;
+    padding: 5px;
+}
+.day{
+    display: flex;
+    justify-content: space-between;
+}
+.week{
+    font-size: 29px;
+}
+.today{
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.date{
+    text-align: right;
+}
+.odd,.even,.all{
+    display: none;
+    font-size: 8px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.county,.countyTown{
+    background-size: 24px;
+    height: 31px;
+    border-radius: 20px;
+    width: 182px;
+}
+.info{
+    height: 84.1%;
+    overflow-y: auto;
+}
+.list{
+    overflow-y: auto;
+    height: auto;
+}
+.hospital{
+    padding:10px;
+    border-bottom: 2px solid gray;
+    position: relative;
+}
+.hospital:hover{
+    background:rgba(0,0,0,0.1);
+    
+}
+.shop{
+    display: flex;
+}
+.locationArrow{
+    height: 25px;
+    position: absolute;
+    right: 12px;
+}
+.locationArrow:hover{
+cursor: pointer;
+}
+.shop h3{
+    font-size: 21px;
+    padding-bottom: 10px;
+    margin-right: 70px;
+    font-weight: bold;
+}
+.shop a{
+    text-decoration: none;
+    text-align: right;
+    padding-right: 10px;
+    color: #73C0D8;
+    font-size: 24px;
+}
+.shop a:hover{
+    color: orange;
+    cursor: pointer;
+}
+.storeInfo{
+    font-size: 14px;
+    font-size: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+.mask{
+    display: flex;
+    justify-content: space-between;
+}
+
+#adultMask{
+    background: #73c0d8;
+    border-radius: 20px;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    width: 180px;
+    margin-right: 5px;
+    text-align: center;
+}
+#childMask{
+    background:  pink;
+    border-radius: 20px;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    width: 180px;
+    text-align: center;
+}
+#map { 
+    height: 100%;
+    width: 100%;
+ }
+.marker-cluster-small {
+		background-color: rgba(181, 226, 140, 0.6);
+		}
+	.marker-cluster-small div {
+		background-color: rgba(110, 204, 57, 0.6);
+		}
+
+	.marker-cluster-medium {
+		background-color: rgba(241, 211, 87, 0.6);
+		}
+	.marker-cluster-medium div {
+		background-color: rgba(240, 194, 12, 0.6);
+		}
+
+	.marker-cluster-large {
+		background-color: rgba(253, 156, 115, 0.6);
+		}
+	.marker-cluster-large div {
+		background-color: rgba(241, 128, 23, 0.6);
+		}
+
+	.marker-cluster {
+		background-clip: padding-box;
+		border-radius: 20px;
+		}
+	.marker-cluster div {
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		margin-top: 5px;
+
+		text-align: center;
+		border-radius: 15px;
+		font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		}
+	.marker-cluster span {
+		line-height: 30px;
+        }
+        
+
+.leaflet-popup-content-wrapper h1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.leaflet-popup-content-wrapper p{
+   margin: 0 auto;
+}
